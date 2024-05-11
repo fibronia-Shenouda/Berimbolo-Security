@@ -1,0 +1,52 @@
+#contact{
+  height: max-content;
+}
+
+form{
+  padding: 3%;
+  background-color: #f7f7f7;
+  height: 100%;
+}
+
+label{
+  color: #38D9BA;
+  margin: 1%;
+  font-weight: bold;
+}
+
+input{
+  color: rgb(213, 213, 213);
+}
+
+.s{
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: aliceblue;
+}
+
+.contact-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 670px) {
+  .contact-img{
+    display: none;
+  }
+
+  .contact-container{
+    grid-template-columns: 100%;
+  }
+}

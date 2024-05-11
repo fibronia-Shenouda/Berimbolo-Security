@@ -1,0 +1,50 @@
+#footer{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: max-content;
+  color: white;
+  padding: 2% 5%;
+}
+
+.footer-title{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 1230px) {
+  .footer-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .f-services {
+    grid-row: 1 / span 1; /* Span 1 row */
+    grid-column: 1 / span 1; /* Span 1 column */
+  }
+  
+  .f-value {
+    grid-row: 1 / span 1; /* Span 1 row */
+    grid-column: 2 / span 1; /* Span 1 column */
+  }
+  
+  .f-contacts {
+    grid-row: 2 / span 1; /* Span 1 row */
+    grid-column: 1 / span 2; /* Span 2 columns */
+  }
+}
+
+@media (max-width: 610px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

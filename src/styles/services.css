@@ -1,0 +1,117 @@
+#services{
+  height: min-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column; 
+  padding-bottom: 2%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title h2{
+  color: white;
+}
+
+.services-container{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 5%;
+  padding-top: 1%;
+}
+
+.title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line{
+  height: 1px;
+  width: 25%;
+  background-color: #38D9BA;
+  text-align: center;
+}
+
+.s-card{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  height: 150px;
+  transition: background 0.3s ease-in-out;
+  padding-bottom: 1%;
+}
+
+
+.icon{
+  color: #38D9BA;
+  font-size: 32px;
+  margin-bottom: 2.5%;
+}
+
+.s-card:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  border: 2.5px solid #38D9BA;
+  cursor: pointer;
+}
+
+.s-card-title{
+  font-size: 1.3vw;
+}
+
+@media (max-width: 1370px) {
+  .services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 8%;
+  }
+
+  .s-card-title{
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .s-card-title{
+    font-size: 2.8vw;
+  }
+
+  .services-container{
+    padding: 8%;
+  }  
+}
+
+@media (max-width: 400px) {
+  .s-card-title{
+    font-size: 5vw;
+  }
+
+  .services-container{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 2%;
+    padding-bottom: 15%;
+  } 
+}
+
+@media (max-width: 280px) {
+  .s-card-title{
+    font-size: 5vw;
+  }
+
+  .services-container{
+    padding-bottom: 20%;
+  } 
+}
+
+@media (max-width: 205px) {
+  .services-container{
+    padding-bottom: 30%;
+  } 
+}

@@ -1,0 +1,13 @@
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.brand{
+  font-weight: 600;
+}
